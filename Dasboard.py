@@ -26,7 +26,7 @@ plt.rcParams["figure.facecolor"] = "#000000"
 
 ###load the data
 
-data_sample = pd.read_csv(r"C:\Users\radek\IronHack\IronRadek\Week8\Project_8\data\data_sample_labeled.csv")
+data_sample = pd.read_csv(r"data\data_sample_labeled.csv")
 
 ### Setting the layout of the page
 st.set_page_config(layout="wide")
@@ -92,7 +92,7 @@ for point in range(0,size_map_list_5):
 ##########Graphs
 ### Rides per day and hour
 #Operation on data
-data = pd.read_csv(r'C:\Users\radek\IronHack\IronRadek\Week8\Project_8\data\uber-raw-data-may14.csv')
+data = pd.read_csv(r'data\uber-raw-data-may14.csv')
 data['Date/Time'] =pd.to_datetime(data['Date/Time'])
 data['hour'] =data['Date/Time'].dt.hour
 data['day_of_week'] =data['Date/Time'].dt.day_name()
